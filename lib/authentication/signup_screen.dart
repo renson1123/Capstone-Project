@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:users_app/authentication/login_screen.dart';
+import 'package:users_app/methods/common_methods.dart';
 
 class SignUpScreen extends StatefulWidget {
   const SignUpScreen({super.key});
@@ -15,6 +16,13 @@ class _SignUpScreenState extends State<SignUpScreen>
   TextEditingController phoneNumberTextEditingController = TextEditingController();
   TextEditingController emailTextEditingController = TextEditingController();
   TextEditingController passwordTextEditingController = TextEditingController();
+
+  CommonMethods cMethods = CommonMethods();
+
+  checkIfNetworkIsAvailable()
+  {
+    cMethods.checkConnectivity(context);
+  }
 
   @override
   Widget build(BuildContext context)
@@ -124,7 +132,7 @@ class _SignUpScreenState extends State<SignUpScreen>
                     ElevatedButton(
                         onPressed: ()
                         {
-
+                          checkIfNetworkIsAvailable();
                         },
                         style: ElevatedButton.styleFrom(
                           backgroundColor: Colors.purple,
