@@ -22,6 +22,33 @@ class _SignUpScreenState extends State<SignUpScreen>
   checkIfNetworkIsAvailable()
   {
     cMethods.checkConnectivity(context);
+
+    // Form Validation
+    signUpFormValidation();
+  }
+
+  signUpFormValidation()
+  {
+    if(usernameTextEditingController.text.trim().length < 3)
+      {
+        cMethods.displaySnackBar("Username must be at least 4 or more characters", context);
+      }
+    else if (phoneNumberTextEditingController.text.trim().length < 10)
+      {
+        cMethods.displaySnackBar("Phone number must be at least 11 digits", context);
+      }
+    else if (!emailTextEditingController.text.contains("@"))
+      {
+        cMethods.displaySnackBar("Please enter a valid Email Address", context);
+      }
+    else if (passwordTextEditingController.text.trim().length < 7)
+      {
+        cMethods.displaySnackBar("Password must be at least 8 or more characters", context);
+      }
+    else
+      {
+        // Register user
+      }
   }
 
   @override
