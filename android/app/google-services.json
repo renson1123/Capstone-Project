@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "704258118725",
+    "firebase_url": "https://capstone-project-bbafe-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "capstone-project-bbafe",
+    "storage_bucket": "capstone-project-bbafe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:704258118725:android:5148055de12a7b6c247f2c",
+        "android_client_info": {
+          "package_name": "com.rplacino.client_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBf7g26tTW-7Pt5lWUUbHxhV4vTDoCF6_s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:704258118725:android:758cdb4e87a9396a247f2c",
+        "android_client_info": {
+          "package_name": "com.rplacino.usersapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBf7g26tTW-7Pt5lWUUbHxhV4vTDoCF6_s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
